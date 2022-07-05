@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    h1,
+    form,
+    div,
+    h3 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>percentage calculator</title>
+</head>
+
+<body>
+    <h1>Percentage calculator</h1>
+    <form onsubmit="cal(); return false;">
+        <div>
+            <label for="totalmarks">total marks</label>
+            <input type="number" min="1" placeholder="Enter total marks" required id="totalmarks">
+        </div>
+        <br>
+        <div>
+            <label for="obtaniendmarks">obtaniend marks</label>
+            <input type="number" min="1" placeholder="Enter obtaniend marks" required id="obtaniendmarks">
+        </div>
+        <br>
+
+        <button type="submit">calculator</button>
+    </form>
+    <h3 id="result"></h3>
+
+
+    <script>
+        function cal() {
+
+
+            let totalmarks = document.querySelector("#totalmarks").value;
+            let obtaniendmarks = document.querySelector("#obtaniendmarks").value;
+            let result = obtaniendmarks * 100 / totalmarks;
+            document.querySelector("#result").innerHTML = `you have ${result}%`;
+        }
+    </script>
+</body>
+
+</html>
