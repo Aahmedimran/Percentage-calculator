@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    h1,
-    form,
-    div,
-    h3 {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-</style>
+<link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
 
 <head>
     <meta charset="UTF-8">
@@ -37,16 +29,7 @@
     <h3 id="result"></h3>
 
 
-    <script>
-        function cal() {
 
-
-            let totalmarks = document.querySelector("#totalmarks").value;
-            let obtaniendmarks = document.querySelector("#obtaniendmarks").value;
-            let result = obtaniendmarks * 100 / totalmarks;
-            document.querySelector("#result").innerHTML = `you have ${result}%`;
-        }
-    </script>
 </body>
 
 </html>
